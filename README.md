@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Neidys Velasquez Portfolio
 
@@ -44,3 +45,7 @@ This is a personal portfolio website created to showcase my skills, projects, an
 
 ## Contact
 Feel free to reach out via the [Contact Form](contact.html) or connect on [LinkedIn](https://www.linkedin.com/in/velasquezneidys/).
+=======
+# NeidysVelasquezPortfolio
+Personal portfolio website showcasing my skills, projects, and experience.
+>>>>>>> 460b1c3d2a3e73982889e2ed6fe52dc98cdde71e
