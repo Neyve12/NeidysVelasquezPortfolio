@@ -1,0 +1,701 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F4F8; /* Light blue background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/pexels-thisisengineering-3861969.jpg'); /* Adjust path based on where your image is saved */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+
+/* Header Styling */
+header {
+  background: #002855; /* Navy blue for header */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #4AA3DF; /* Sky blue hover */
+  color: #fff;
+}
+
+/* Dropdown Styling */
+nav ul .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #004080; /* Lighter navy blue for dropdown */
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul .dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  border-bottom: 1px solid #4AA3DF; /* Sky blue border */
+}
+
+nav ul .dropdown li a:last-child {
+  border-bottom: none;
+}
+
+nav ul .dropdown li a:hover {
+  background-color: #4AA3DF; /* Sky blue hover */
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+/* Navigation Bar Styling */
+header nav {
+  display: flex; /* Flexbox for alignment */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  background-color: #004080; /* Keep the blue palette */
+  padding: 10px 15px; /* Add padding for spacing */
+  position: fixed;
+  top: 0; /* Position at the very top */
+  left: 0; /* Position at the very left */
+  width: 100%; /* Full width of the screen */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align horizontally */
+}
+
+nav ul li {
+  position: relative; /* For dropdown positioning */
+  margin-right: 15px; /* Add space between items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3; /* Lighter blue on hover */
+}
+
+/* Dropdown Menu Styling */
+nav ul .dropdown {
+  display: none; /* Hide dropdown initially */
+  position: absolute; /* Position it relative to parent */
+  top: 100%; /* Show below the parent item */
+  left: 0; /* Align with the left */
+  background-color: #004080; /* Same blue as nav */
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul .dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  border-bottom: 1px solid #0056b3; /* Add a border between dropdown items */
+}
+
+nav ul .dropdown li a:hover {
+  background-color: #0056b3; /* Lighter blue on hover */
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Mobile Responsive Dropdown */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column; /* Stack navigation vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu items */
+    width: 100%; /* Full width */
+  }
+
+  nav ul li {
+    margin-bottom: 10px; /* Space between items */
+  }
+}
+
+/* Main Section Styling */
+main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #002855; /* Navy blue headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+/* About Section Styling */
+#about-section {
+  margin-bottom: 40px;
+}
+
+#about-section p {
+  margin-bottom: 15px;
+}
+
+#about-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#about-section table th, #about-section table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#about-section table th {
+  background-color: #4AA3DF; /* Light blue header */
+  color: #fff;
+}
+
+#about-section table tr:nth-child(even) {
+  background-color: #F0F4F8; /* Light blue rows */
+}
+
+/* Projects Section Styling */
+#projects-section article {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #F0F4F8; /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects-section article h3 {
+  color: #002855; /* Navy blue headings */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#projects-section article p {
+  margin: 0;
+}
+
+/* Contact Page Styling */
+#job-opportunities, #contact-form {
+  margin-bottom: 40px;
+}
+
+#job-opportunities h2, #contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #002855; /* Navy blue headings */
+}
+
+/* Form Styling */
+.contact-form {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #F0F4F8; /* Light blue form background */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #6E6E6E; /* Gray border */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: #4AA3DF; /* Sky blue focus */
+}
+
+.contact-form button {
+  background-color: #4AA3DF; /* Sky blue button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #002855; /* Navy blue hover effect */
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+  background: #002855; /* Navy blue footer */
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+/* About Section Table Styling */
+#about-section table {
+  width: 100%; /* Use the full width */
+  border-collapse: collapse; /* Remove extra spacing */
+  margin-top: 20px; /* Add space above the table */
+  background-color: #fff; /* White background for the table */
+  border: 1px solid #ccc; /* Light gray border around the table */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the rounded corners work */
+}
+
+#about-section table th {
+  background-color: #4AA3DF; /* Sky blue header */
+  color: #fff; /* White text for contrast */
+  text-align: left; /* Align text to the left */
+  padding: 10px; /* Add space inside header cells */
+  font-weight: bold; /* Make headers bold */
+  text-transform: uppercase; /* Optional: Uppercase for headers */
+}
+
+#about-section table td {
+  padding: 10px; /* Add space inside table cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Add light borders between rows */
+}
+
+#about-section table tr:nth-child(even) {
+  background-color: #F0F4F8; /* Light blue for alternate rows */
+}
+
+#about-section table tr:hover {
+  background-color: #E3F2FD; /* Slightly lighter blue on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+/* About Section Table Styling */
+#about-section table {
+  width: 100%; /* Full width of container */
+  border-collapse: collapse; /* Remove gaps between cells */
+  margin-top: 20px; /* Space above the table */
+  background-color: #fff; /* Clean white background */
+  border: 1px solid #ccc; /* Light gray border around the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Smooth rounded edges */
+  overflow: hidden; /* Ensure border-radius applies correctly */
+}
+
+/* Table Header Styling */
+#about-section table th {
+  background-color: #4AA3DF; /* Sky blue header */
+  color: #fff; /* White text for contrast */
+  padding: 15px; /* Add more padding for a spacious header */
+  text-transform: uppercase; /* Make header text uppercase for emphasis */
+  text-align: left; /* Left align text */
+  font-weight: bold; /* Emphasize header text */
+}
+
+/* Table Row Styling */
+#about-section table td {
+  padding: 12px 15px; /* Add padding inside cells */
+  border-bottom: 1px solid #ddd; /* Light border between rows */
+  text-align: left; /* Align text to the left */
+  color: #333; /* Darker text color for readability */
+}
+
+/* Alternate Row Coloring */
+#about-section table tr:nth-child(even) {
+  background-color: #F0F4F8; /* Light blue for alternating rows */
+}
+
+/* Hover Effect */
+#about-section table tr:hover {
+  background-color: #E3F2FD; /* Slightly brighter blue on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Table Footer (Optional if needed later) */
+#about-section table tfoot td {
+  background-color: #4AA3DF; /* Sky blue for footer */
+  color: #fff; /* White text for contrast */
+  font-weight: bold; /* Emphasize footer text */
+  padding: 15px; /* Add padding for consistency */
+  text-align: center; /* Center footer text */
+}
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(120deg, #4AA3DF, #004080);
+  color: #fff;
+}
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+#hero .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #004080;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#hero .cta-button:hover {
+  background-color: #4AA3DF;
+  color: #fff;
+}
+
+/* Adjust layout for three columns */
+.contact-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Individual Sections */
+#contact-form, #linkedin-section, #github-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#github-section iframe {
+  margin: 10px 0;
+  border-radius: 8px;
+}
+/* General Heading Styling */
+h2 {
+  font-size: 1.8rem; /* Consistent font size */
+  color: #1a3d7c; /* Matches your color palette */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Optional: Styling for the text in headers */
+#contact-form h2, #linkedin-section h2, #github-section h2 {
+  font-size: 1.8rem; /* Ensure all section headers are the same */
+  margin-bottom: 15px;
+  color: #123456; /* Or another color from your palette */
+}
+
+/* Adjust spacing between sections for clarity */
+section {
+  margin-bottom: 30px;
+}
+/* GitHub Section Styling */
+#github-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.github-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.github-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.github-logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #0056b3; /* Blue color for the link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.github-link:hover {
+  color: #003d80; /* Darker blue on hover */
+}
+/* Footer Gradient Background */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(90deg, #00264d, #003366);
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Add padding to "Learn More" button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
+}
+
+/* Hero Section Animation */
+#hero {
+  text-align: center;
+  background-color: #1e90ff;
+  color: white;
+  padding: 50px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark Mode: Background toggle */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode #hero {
+  background-color: #333;
+}
+
+.dark-mode footer {
+  background: linear-gradient(90deg, #000000, #333333);
+}
+
+.dark-mode .cta-button {
+  background-color: #444;
+}
+
+.dark-mode .cta-button:hover {
+  background-color: #555;
+}
+/* General Dark Mode Adjustments */
+body.dark-mode {
+  background-color: #121212; /* Dark background for the body */
+  color: #f5f5f5; /* Light text for dark mode */
+}
+
+/* Hero Section in Dark Mode */
+.dark-mode #hero {
+  background-color: #333; /* Darker background for hero section */
+  color: #f5f5f5; /* Light text for hero section */
+}
+
+/* Main Content Section in Dark Mode */
+main.dark-mode {
+  background-color: #1e1e1e; /* Darker main section */
+  color: #f5f5f5; /* Light text */
+}
+
+/* Contact Form in Dark Mode */
+.contact-form.dark-mode {
+  background-color: #1e1e1e; /* Darker background */
+  border-color: #444; /* Slightly lighter border */
+  color: #f5f5f5; /* Light text */
+}
+
+.contact-form input.dark-mode,
+.contact-form textarea.dark-mode {
+  background-color: #333; /* Darker input fields */
+  color: #f5f5f5; /* Light text for input fields */
+  border-color: #444; /* Border color for inputs */
+}
+
+.contact-form button.dark-mode {
+  background-color: #444; /* Button in dark mode */
+  color: #f5f5f5; /* Light text for button */
+}
+
+/* Footer in Dark Mode */
+footer.dark-mode {
+  background: linear-gradient(90deg, #000, #333); /* Gradient background for footer */
+  color: #f5f5f5; /* Light text */
+}
+
+/* GitHub Section in Dark Mode */
+#github-section.dark-mode {
+  background-color: #1e1e1e; /* Darker GitHub section */
+  color: #f5f5f5; /* Light text for GitHub section */
+}
+
+.github-logo-container.dark-mode .github-logo:hover {
+  transform: scale(1.1); /* Maintain hover effect */
+}
+
+.github-link.dark-mode {
+  color: #4AA3DF; /* Bright blue for GitHub link */
+}
+
+.github-link.dark-mode:hover {
+  color: #1E90FF; /* Brighter blue on hover */
+}
+
+/* LinkedIn Section in Dark Mode */
+#linkedin-section.dark-mode {
+  background-color: #1e1e1e; /* Darker LinkedIn section */
+  color: #f5f5f5; /* Light text */
+}
+
+.LI-profile-badge.dark-mode {
+  background-color: #333; /* Darker badge background */
+  color: #f5f5f5; /* Light text for badge */
+}
+
+/* Hero Section Button in Dark Mode */
+.cta-button.dark-mode {
+  background-color: #444; /* Darker button background */
+  color: #f5f5f5; /* Light button text */
+}
+
+.cta-button.dark-mode:hover {
+  background-color: #555; /* Lighter hover effect */
+}
+
+/* Table Styling in Dark Mode */
+#about-section table.dark-mode {
+  background-color: #1e1e1e; /* Dark table background */
+  color: #f5f5f5; /* Light text */
+  border-color: #444; /* Adjust border color */
+}
+
+#about-section table th.dark-mode {
+  background-color: #444; /* Darker header */
+  color: #f5f5f5; /* Light text for header */
+}
+
+#about-section table td.dark-mode {
+  background-color: #333; /* Darker rows */
+  color: #f5f5f5; /* Light text for cells */
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #f1f1f1; /* Light text */
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1e1e1e; /* Dark background for header and footer */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p {
+  color: #ffffff; /* White text for headings and paragraphs */
+}
+
+.dark-mode #about-section {
+  color: #e0e0e0; /* Slightly lighter text for readability */
+}
+
+.dark-mode table th {
+  background-color: #333333; /* Dark header background for table */
+  color: #ffffff; /* White text for table headers */
+}
+
+.dark-mode table td {
+  background-color: #1e1e1e; /* Dark cell background */
+  color: #ffffff; /* White text for table cells */
+}
